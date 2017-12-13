@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div class="container">
+  <div class="container">
         <div class="row mt-5">
             <div class="col-md-6 mx-md-auto">
                 <div class="row">
@@ -16,7 +16,7 @@
                         <form>
 
                             <div class="form-group">
-                                <input type="text" class="dis" id="display" placeholder="0">
+                                <input type="text" class="form-control text-right dis" id="disply" readonly="readonly">
                             </div>
                         </form>
                     </div>
@@ -29,55 +29,55 @@
                         <button type="button" class="btn btn-dark btn-lg btn-block">./'</button>
                     </div>
                     <div class="col-md-2">
-                        <button type="button" class="btn btn-dark btn-lg btn-block">CE</button>
-                        <button type="button" class="btn btn-dark btn-lg btn-block">7</button>
-                        <button type="button" class="btn btn-dark btn-lg btn-block">4</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onClearCalculator()">CE</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onAddDigit(7)">7</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onAddDigit(4)">4</button>
                     </div>
                     <div class="col-md-2">
-                        <button type="button" class="btn btn-dark btn-lg btn-block">C</button>
-                        <button type="button" class="btn btn-dark btn-lg btn-block">8</button>
-                        <button type="button" class="btn btn-dark btn-lg btn-block">5</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onClearCalculator()">C</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onAddDigit(8)">8</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onAddDigit(5)">5</button>
                     </div>
                     <div class="col-md-2">
                         <button type="button" class="btn btn-dark btn-lg btn-block"><=</button>
-                        <button type="button" class="btn btn-dark btn-lg btn-block">9</button>
-                        <button type="button" class="btn btn-dark btn-lg btn-block">6</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onAddDigit(9)">9</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onAddDigit(6)">6</button>
                     </div>
                     <div class="col-md-2">
-                        <button type="button" class="btn btn-dark btn-lg btn-block">/</button>
-                        <button type="button" class="btn btn-dark btn-lg btn-block">*</button>
-                        <button type="button" class="btn btn-dark btn-lg btn-block">+</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onAddDigit('/')">/</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onAddDigit('x')">x</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onAddDigit('+')">+</button>
                     </div>
                 </div>
 
                 <div class="row" style="margin-top: -1px;">
                     <div class="col-md-3">
-                        <button type="button" class="btn btn-dark btn-lg btn-block">%</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onAddDigit('/')">%</button>
                         <button type="button" class="btn btn-dark btn-lg btn-block">1/x</button>
                     </div>
                     <div class="col-md-2">
-                        <button type="button" class="btn btn-dark btn-lg btn-block">1</button>
-                        <button type="button" class="btn btn-dark btn-lg btn-block">0</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onAddDigit(1)">1</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onAddDigit(0)">0</button>
                     </div>
                     <div class="col-md-2">
-                        <button type="button" class="btn btn-dark btn-lg btn-block">2</button>
-                        <button type="button" class="btn btn-dark btn-lg btn-block">00</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onAddDigit(2)">2</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onAddDigit(00)">00</button>
                     </div>
                     <div class="col-md-2">
-                        <button type="button" class="btn btn-dark btn-lg btn-block">3</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onAddDigit(3)">3</button>
                         <button type="button" class="btn btn-dark btn-lg btn-block">.</button>
                     </div>
                     <div class="col-md-2">
-                        <button type="button" class="btn btn-dark btn-lg btn-block">-</button>
-                        <button type="button" class="btn btn-dark btn-lg btn-block">=</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onAddDigit('-')">-</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block" onclick="onCalculate()">=</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+   <script type="text/javascript" src="js/jquery.js"></script>
+   <script type="text/javascript" src="js/bootstrap.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
